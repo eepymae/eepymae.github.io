@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --sidebar-color: #2e3049;
+    --sidebar-button-active: #26283d;
+    --body-background-color: #e0e0e0;
+    --body-background-subcolor: #d3d3d3;
+    --subtext-color: #bbbbbb;
+}
+
+#sidebar {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--sidebar-color);
+    color: white;
+    width: 170px;
+    padding: 10px;
+}
+
+#main {
+    margin-left: 190px;
+}
+
+#content {
+    margin: 40px 80px;
+}
+
+#banner {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#crown {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#profile {
+    display: block;
+    margin: auto auto 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.menu-button {
+    padding: 5px 20px;
+    margin-bottom: 2px;
+    color: var(--subtext-color);
+    border-radius: 20px;
+}
+
+.menu-button:hover {
+    color: white;
+}
+
+.active {
+    background-color: var(--sidebar-button-active);
+    font-weight: 400;
+    color: white;
+}
+
+.social-link {
+    padding: 2px 20px;
+    color: var(--subtext-color);
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+.social-link:hover {
+    color: white;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.youtube::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/960px-YouTube_full-color_icon_%282017%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240107144800");
+}
+.roblox::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Roblox_Logo.svg/960px-Roblox_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220929193725");
+}
+.discord::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://www.svgrepo.com/show/353655/discord-icon.svg");
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--body-background-subcolor);
+    border-radius: 15px;
+}
+.grid-item img {
+    height: 75px;
+    object-fit: contain;
+}
+.grid-item h3 {
+    margin-bottom: 0.5rem;
+}
+.grid-item p {
+    font-size: 0.8rem;
+}
+
+body {
+    margin: 0;
+    background-color: var(--body-background-color);
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-wrap: initial;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-wrap: initial;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-wrap: initial;
+    margin-bottom: 1.5rem;
+}
+
+h3, h4, h5, h6, p, pre {
+    text-wrap: initial;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin: 1rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#name {
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+#username {
+    color: var(--subtext-color);
+    margin-bottom: 1rem;
+}
+
+#quote {
+    font-size: 0.75rem;
+}
