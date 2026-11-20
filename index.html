@@ -3,11 +3,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>eepymae - Home</title>
-
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -18,11 +18,12 @@
           <img id="profile" src="assets/profile.png">
           <h2 id="name">Mikaela Mae</h1>
           <p id="username">@eepymae</p>
-          <p id="quote"><i>"blehh."</i></p>
+          <p id="quote">"hmm..."</p>
+          <p id="status" class="limited">Commissions...</p>
           <hr>
         </span>
-
-        <ul>
+        
+        <ul id="sidebar-list">
           <li class="menu-button active">
             <a href="index.html">Overview</a>
           </li>
@@ -30,15 +31,15 @@
             <a href="roles.html">Roles</a>
           </li>
           <li class="menu-button">
-            <a href="">Creations</a>
+            <a href="creations.html">Creations</a>
           </li>
           <li class="menu-button">
-            <a href="">Projects</a>
+            <a href="projects.html">Projects</a>
           </li>
         </ul>
         <hr>
 
-        <ul>
+        <ul id="sidebar-list">
           <li class="social-link">
             <a class="icon youtube" target="_blank" href="https://www.youtube.com/@eepymae">@eepymae</a>
           </li>
@@ -53,47 +54,55 @@
 
       <div id="main">
         <div>
-          <img id="banner" src="assets/banner.jpg">
+          <img id="banner" src="assets/banner.gif">
         </div>
-
         <div id="content">
           <h1>Overview</h1>
-          <p>
-            Heya! I'm <b>Mika</b> for short, and I wear a lot of creative hats.
-          </p>
-          <p>
-            I try to make games by myself! Writing the code, game design, compose music, and more!
-          </p>
+          <p>Heya! I'm <b>Mika</b> for short, and I wear a lot of creative hats.</p>
+          <p>I try to make games by myself! I get inspired by many games, media, and the community. I write the code, game design, compose music, and more!</p>
 
           <div class="grid-container">
             <div class="grid-item">
               <img src="https://www.svgrepo.com/show/413669/game.svg">
-              <h3>Game & Code</h3>
-              <p>
-                Solo indie game dev, game designer, and programmer focused on main gameplay loop, mechanics, and system architecture.
-              </p>
+              <h2>Game & Code</h2>
+              <p>Solo indie game dev, game designer, and programmer focused on main gameplay loop, mechanics, and system architecture.</p>
             </div>
             <div class="grid-item">
               <img src="https://www.svgrepo.com/show/502422/music.svg">
-              <h3>Music & Audio</h3>
-              <p>
-                Video game music composer and sound designer writing original tracks, dynamic looped music, and retro/hybrid sounds.
-              </p>
+              <h2>Music & Audio</h2>
+              <p>Video game music composer and sound designer writing original tracks, dynamic looped music, and retro/hybrid sounds.</p>
             </div>
             <div class="grid-item">
               <img src="https://www.svgrepo.com/show/375945/art.svg">
-              <h3>Art & Story</h3>
-              <p>
-                Novice 2D pixel artist, voxel modeler, UI designer, narrative story writer, and video editor building worlds together.
-              </p>
+              <h2>Art & Story</h2>
+              <p>Novice 2D pixel artist, voxel modeler, UI designer, narrative story writer, and video editor building worlds together.</p>
             </div>
           </div>
-          <br>
+
           <h1>Introduction</h1>
-          <p>
-            when i uhhh.. uhm. yea.
-          </p>
+          <p>I am a solo indie game developer, a programmer, a music composer, and a novice artist studying Computer Science. I bridge the gap between technical engineering and creative audio & visual design. My goal is to make games feel cohesive where the code runs smoothly, the mechanics feel snappy, and the music pulls players straight into the atmosphere along with visuals. And to prove that working solo is not impossible, just takes time, motivation, and effort.</p>
+          <br>
+
+          <h2>Quick Info</h2>
+          <ul id="info">
+            <li>
+              <p><b>Timezone:</b> GMT +8 (SGT)</p>
+            </li>
+            <li>
+              <p><b>From:</b> Philippines</p>
+            </li>
+            <li>
+              <p><b>Languages:</b> Fluent in English & Filipino</p>
+            </li>
+            <li>
+              <p><b>Availability:</b> Thursday - Sunday <i>(varies depending on academic workload!)</i></p>
+            </li>
+          </ul>
         </div>
+
+        <footer>
+          <p>&copy; 2026 eepymae. All rights reserved.</p>
+        </footer>
       </div>
     </div>
   </body>
