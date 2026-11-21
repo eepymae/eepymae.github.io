@@ -7,17 +7,17 @@
     <title>eepymae - Roles</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900" rel="stylesheet" type="text/css">
-    <script src="script.js" defer></script>
-    <script src="modal.js" defer></script>
+    <script src="scripts/profile.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
   </head>
 
   <body>
     <div class="wrapper">
       <div id="sidebar">
         <span class="center">
-          <img id="crown" src="assets/crown.png">
-          <img id="profile" src="assets/profile.png">
-          <h2 id="name">Mikaela Mae</h1>
+          <img id="crown" src="assets/img/crown.png">
+          <img id="profile" src="assets/img/profile.png">
+          <h2 id="name">Mikaela Mae</h2>
           <p id="username">@eepymae</p>
           <p id="quote">"hmm..."</p>
           <p id="status" class="limited">Commissions...</p>
@@ -55,18 +55,20 @@
 
       <div id="main">
         <div>
-          <img id="banner" src="assets/banner.gif">
+          <img id="banner" src="assets/img/banner.gif">
         </div>
+        
         <div id="content">
           <h1>Roles</h1>
-          <p>This section lists the roles that I have experience and capabilities.</p>
+          <p>This section lists the roles that I have the experience and capabilities.</p>
 
-          <div class="card-container">
+          <div class="card-grid">
             <div class="card-item" onclick="openModal('game-dev')">
               <div class="card-accent" style="background-color: lightgreen;"></div>
               <div class="card-content">
                 <h3>Solo Indie Game Developer</h3>
                 <p class="card-experience">6 years</p>
+                <span class="card-status">Main role</span>
                 <p>Creating and designing engaging interactive experiences.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
@@ -77,6 +79,7 @@
               <div class="card-content">
                 <h3>Programmer</h3>
                 <p class="card-experience">6 years</p>
+                <span class="card-status">Main role</span>
                 <p>Focuses on robust backend systems, object-oriented, modular code, and smooth gameplay loops.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
@@ -86,59 +89,65 @@
               <div class="card-accent" style="background-color: lightcoral;"></div>
               <div class="card-content">
                 <h3>Video Game Music Composer</h3>
-                <p class="card-experience">7 years (most experienced)</p>
+                <p class="card-experience">7 years</p>
+                <span class="card-status">Most experienced</span>
                 <p>Writing energetic, intense, and sentimental video game soundtracks that match the atmosphere.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
             </div>
 
-            <div class="card-item" onclick="openModal('')">
+            <div class="card-item" onclick="openModal('sound-designer')">
               <div class="card-accent" style="background-color: goldenrod;"></div>
               <div class="card-content">
                 <h3>Sound Designer</h3>
                 <p class="card-experience">3 years</p>
+                <span class="card-status">Secondary role</span>
                 <p>Crafting and engineering immersive sounds.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
             </div>
 
-            <div class="card-item" onclick="openModal('')">
+            <div class="card-item" onclick="openModal('artist')">
               <div class="card-accent" style="background-color: pink;"></div>
               <div class="card-content">
                 <h3>2D & Pixel Artist</h3>
                 <p class="card-experience">2 years</p>
+                <span class="card-status">Still a beginner!</span>
                 <p>Drawing concept arts and pixelated sprites in <b>pain, despair, and agony</b>.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
             </div>
 
-            <div class="card-item" onclick="openModal('')">
+            <div class="card-item" onclick="openModal('modeler')">
               <div class="card-accent" style="background-color: darkslateblue;"></div>
               <div class="card-content">
                 <h3>Voxel Modeler</h3>
                 <p class="card-experience">6 months</p>
+                <span class="card-status">Still a beginner!</span>
                 <p>Creating and modeling 3D objects in volumetric cube style.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
             </div>
 
-            <div class="card-item" onclick="openModal('')">
+            <div class="card-item" onclick="openModal('writer')">
               <div class="card-accent" style="background-color: mediumspringgreen;"></div>
               <div class="card-content">
                 <h3>Narrative Story Writer</h3>
                 <p class="card-experience">2 years</p>
+                <span class="card-status">Secondary role</span>
                 <p>World-building and storyboarding plots and lores.</p>
                 <p class="card-click-text">Click to view details &rarr;</p>
               </div>
             </div>
 
-            <div class="card-item" onclick="openModal('')">
+            <div class="card-item" onclick="openModal('ui-designer')">
               <div class="card-accent" style="background-color: violet;"></div>
               <div class="card-content">
                 <h3>UI Designer</h3>
                 <p class="card-experience">5 years</p>
+                <span class="card-status">Secondary role</span>
                 <p>Concepting and designing interactive user interface and making them functional.</p>
-                <p class="card-click-text">Click to view details &rarr;</p>
+                <span class="card-click-text">Click to view details &rarr;</span>
               </div>
             </div>
           </div>
