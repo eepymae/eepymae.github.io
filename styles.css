@@ -470,7 +470,7 @@
 }
 
 .creations-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -543,11 +543,12 @@
     flex-shrink: 0;
 }
 
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-content: center;
-    gap: 20px;
+    gap: 40px;
     padding-block: 10px;
 }
 
