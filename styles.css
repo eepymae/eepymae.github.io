@@ -625,6 +625,72 @@
     color: var(--progress-fill-color);
 }
 
+
+.payment-icons {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 10px;
+    padding-inline: 40px;
+}
+
+.payment-icons-item {
+    text-align: center;
+    width: 80px;
+    margin-inline: auto;
+}
+.payment-icons-item img, .payment-icons-item svg {
+    width: 80px;
+    height: 80px;
+    display: block;
+    object-fit: contain;
+    margin-inline: auto;
+    margin-bottom: 0.5rem;
+}
+.payment-icons-item h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.payment-icons-item p {
+    color: var(--subtext-color);
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+.pricing-item {
+    background-color: var(--sidebar-color);
+    padding: 10px;
+}
+.pricing-header h3 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+.pricing-rate {
+    color: var(--subtext-color);
+    text-align: center;
+    font-size: 0.8rem;
+}
+.pricing-rate span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--progress-fill-color);
+}
+
+.pricing-list {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+
 html {
     overflow-x: hidden;
     max-width: 100%;
