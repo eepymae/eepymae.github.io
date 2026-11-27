@@ -859,7 +859,7 @@ a {
         height: 110px;
     }
 
-    .card-grid, .creations-grid, .projects-grid, .genre-grid, .modal-columns {
+    .card-grid, .creations-grid, .projects-grid, .genre-grid, .modal-columns, .pricing-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
         padding-inline: 0;
